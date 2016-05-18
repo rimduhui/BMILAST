@@ -68,9 +68,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                            <rect key="frame" x="467" y="491" width="34.5" height="20.5"/>
                                         </variation>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-im-hER">
@@ -119,6 +118,7 @@
                                     <constraint firstItem="TFi-L2-Jyh" firstAttribute="top" secondItem="LAA-GT-Fut" secondAttribute="bottom" constant="50" id="7T7-Wm-Kw1"/>
                                     <constraint firstItem="luD-gh-6k4" firstAttribute="centerX" secondItem="egP-3s-KJh" secondAttribute="centerX" id="8WJ-cz-7a1"/>
                                     <constraint firstItem="W3P-yI-2V4" firstAttribute="centerX" secondItem="Rfp-XH-81f" secondAttribute="centerX" id="8ks-Oz-Czc"/>
+                                    <constraint firstItem="8rE-im-hER" firstAttribute="width" secondItem="Rfp-XH-81f" secondAttribute="width" id="9Yb-op-7Sb"/>
                                     <constraint firstItem="W3P-yI-2V4" firstAttribute="top" secondItem="egP-3s-KJh" secondAttribute="top" id="ALK-x0-97G"/>
                                     <constraint firstItem="W3P-yI-2V4" firstAttribute="centerY" secondItem="TFi-L2-Jyh" secondAttribute="centerY" id="Dgf-22-qkN"/>
                                     <constraint firstItem="G7l-3S-lfd" firstAttribute="centerY" secondItem="egP-3s-KJh" secondAttribute="centerY" id="Dog-oU-cx8"/>
@@ -178,6 +178,7 @@
                                         <exclude reference="g4C-ol-bO6"/>
                                         <exclude reference="hAu-C2-wOM"/>
                                         <exclude reference="3tO-bd-rVP"/>
+                                        <exclude reference="9Yb-op-7Sb"/>
                                         <exclude reference="a5W-Jz-Dq2"/>
                                         <exclude reference="3NQ-Cv-7gN"/>
                                         <exclude reference="7T7-Wm-Kw1"/>
@@ -235,6 +236,7 @@
                                         <include reference="g4C-ol-bO6"/>
                                         <include reference="hAu-C2-wOM"/>
                                         <include reference="3tO-bd-rVP"/>
+                                        <include reference="9Yb-op-7Sb"/>
                                         <include reference="a5W-Jz-Dq2"/>
                                         <include reference="3NQ-Cv-7gN"/>
                                         <include reference="7T7-Wm-Kw1"/>
@@ -332,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="111"/>
+            <point key="canvasLocation" x="1698.75" y="28.5"/>
         </scene>
     </scenes>
     <resources>

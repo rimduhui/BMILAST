@@ -92,5 +92,40 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSou
             updateUI()
         }
     }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch(pickerView) {
+        case heightPickerView :
+            return self.ListOfHeightsInM.count
+        case weightPickerView :
+            return self.ListOfWeightsInKg.count
+        default :
+            return 1
+        }
+    }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch(pickerView) {
+        case heightPickerView :
+            return String(format: "%4.2f", self.ListOfHeightsInM[row])
+        case weightPickerView :
+            return String(format: "%4.1f", self.ListOfWeightsInKg[row])
+        default :
+            return ""
+        }
+    }
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch(pickerView) {
+        case heightPickerView :
+            self.height = self.ListOfHeightsInM[row]
+        case weightPickerView :
+            self.weight = self.ListOfWeightsInKg[row]
+        default :
+            break
+        }
+        
+        updateUI()
+    }
 }
-
